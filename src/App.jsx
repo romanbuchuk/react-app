@@ -1,7 +1,11 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
+
+import { useState } from 'react';
+
+// eslint-disable-next-line import/no-unresolved
+import viteLogo from '/vite.svg';
+
+import reactLogo from './assets/react.svg';
 import Button from './components/Button/Button';
 
 function App() {
@@ -19,9 +23,7 @@ function App() {
             </div>
             <h1>Vite + React</h1>
             <div className="card">
-                <Button>
-                    count is {count}
-                </Button>
+                <Button>count is {count}</Button>
                 <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
                 <p>
                     Edit <code>src/App.jsx</code> and save to test HMR
